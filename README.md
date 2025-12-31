@@ -1,77 +1,79 @@
+# ChirpyNosh Frontend
 
-# React + TypeScript + Vite
+![React](https://img.shields.io/badge/React-18-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
+![Vite](https://img.shields.io/badge/Vite-4.4-yellow)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.3-teal)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**ChirpyNosh** is a sustainable food redistribution platform connecting food partners, NGOs, shelters, and communities. The frontend is built with **React + TypeScript + Vite + Tailwind CSS** to provide a fast, responsive, and user-friendly interface for managing surplus food listings, verified pickups, and impact tracking.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Project Mission & Vision
 
-## React Compiler
+**Mission:**  
+Reduce food waste and hunger by building a reliable, technology-driven redistribution platform connecting food partners, NGOs, shelters, and communities through structured, accountable processes.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Vision:**  
+Create a world where no edible food is wasted and access to food is predictable, dignified, and system-driven rather than charity-dependent.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📌 Problem Statement
+
+- Millions of edible food items are wasted daily   
+- Existing apps fail due to late pickups, no verification, and lack of accountability  
+- Donation-based platforms collapse when funding ends  
+
+---
+
+## 💡 Our Solution
+
+ChirpyNosh ensures food is **collected, not wasted**:
+
+- Predictable pickup time windows  
+- Verified partners, NGOs, and shelters  
+- Claim → pickup confirmation workflow  
+- Audit trail for accountability and reporting  
+
+---
+
+## 🛠️ Features / Services
+
+- **Surplus Food Listing:** Restaurants, hotels, and bakeries can list excess food  
+- **Free Food Redistribution:** NGOs & shelters receive free food  
+- **Discounted Near-Expiry Sales:** Safe food sold at low cost with platform commission  
+- **Impact Tracking:** SDG-aligned dashboards measuring portions rescued, food waste reduced, and CO₂ avoided  
+
+---
+
+## 📈 Market Analysis
+
+**Target Users:**  
+- Restaurants, hotels, and bakeries  
+- Universities & institutions  
+- NGOs & shelters  
+
+**Market Opportunity:**  
+- Rising food waste disposal costs  
+- Growing ESG & SDG compliance needs  
+- Demand for **sustainable and scalable solutions**  
+
+---
+
+## ⚙️ Technical Stack
+
+- **Framework:** React 18 + TypeScript  
+- **Bundler:** Vite with HMR  
+- **Styling:** Tailwind CSS  
+- **State Management:** Context API   
+- **API Integration:** RESTful endpoints for listings, pickups, and impact metrics  
+
+**React Compiler:** Not enabled by default for performance; can be added via [React Compiler docs](https://react.dev/learn/react-compiler/installation).
+
+**ESLint Configuration:**  
 
 ```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-=======
-# ChirpyNosh-Frontend-
->>>>>>> 0d2803b2084791443d2f5d7c1bdb3a4a14fb2d9b
+tseslint.configs.recommendedTypeChecked
+tseslint.configs.strictTypeChecked
+tseslint.configs.stylisticTypeChecked
