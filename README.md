@@ -73,7 +73,4 @@ ChirpyNosh ensures food is **collected, not wasted**:
 
 **ESLint Configuration:**  
 
-```js
-tseslint.configs.recommendedTypeChecked
-tseslint.configs.strictTypeChecked
-tseslint.configs.stylisticTypeChecked
+

@@ -23,28 +23,24 @@ export default function Partners() {
 
           return (
             <Card key={p.id} className="p-5 rounded-2xl">
+              {/* Header: Name, Address, Verified Badge */}
               <div className="flex items-start justify-between gap-2">
                 <div>
-                  <div className="font-extrabold text-slate-900">
-                    {p.name}
-                  </div>
-                  <div className="text-sm text-slate-500 mt-0.5">
-                    {p.address}
-                  </div>
+                  <div className="font-extrabold text-slate-900">{p.name}</div>
+                  <div className="text-sm text-slate-500 mt-0.5">{p.address}</div>
                 </div>
 
                 {p.verified && (
-                  <Badge variant="success" className="shrink-0">
+                  <Badge tone="green" className="shrink-0">
                     Verified
                   </Badge>
                 )}
               </div>
 
+              {/* Badges: Partner Type and Listings Count */}
               <div className="flex items-center gap-2 mt-4">
                 <Badge>{p.type}</Badge>
-                <Badge variant="outline">
-                  {listingsCount} listings
-                </Badge>
+                <Badge tone="slate">{listingsCount} listings</Badge>
               </div>
             </Card>
           );
