@@ -74,3 +74,5 @@ ChirpyNosh ensures food is **collected, not wasted**:
 **ESLint Configuration:**  
 
 
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit-blue)](https://chirpy-nosh-frontend.vercel.app)
