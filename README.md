@@ -71,8 +71,5 @@ ChirpyNosh ensures food is **collected, not wasted**:
 
 **React Compiler:** Not enabled by default for performance; can be added via [React Compiler docs](https://react.dev/learn/react-compiler/installation).
 
-**ESLint Configuration:**  
-
-
-
+## Live Demo
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit-blue)](https://chirpy-nosh-frontend.vercel.app)
