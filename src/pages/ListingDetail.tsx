@@ -37,7 +37,7 @@ export default function ListingDetail() {
   const [doneClaim, setDoneClaim] = useState(false);
 
   const myClaims = useMemo(() => s.claims.filter((c) => c.listingId === id), [s.claims, id]);
-  //const pickedUpExists = myClaims.some((x) => x.status === "picked_up");
+ 
 
 
   if (!listing) {

@@ -39,7 +39,7 @@ export default function Partners() {
 
               {/* Badges: Partner Type and Listings Count */}
               <div className="flex items-center gap-2 mt-4">
-                <Badge>{p.type}</Badge>
+                <Badge tone="amber">{p.type}</Badge>
                 <Badge tone="slate">{listingsCount} listings</Badge>
               </div>
             </Card>
